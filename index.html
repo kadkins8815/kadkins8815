@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <!--Bootstrap!-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!--Header/Nav-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Keith R. Adkins</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Jumbotron/banner-->
+  <div class="jumbotron">
+    <img id="profile-pic" src="https://avatars1.githubusercontent.com/u/70526704?s=400&u=22a90fbd2df4438d76ee279b43ee4a62e85cfd0f&v=4" alt="Profile picture" title="Hello!">
+    <h1 class="display-4">Keith R. Adkins</h1>
+    <p class="lead">software developer</p>
+    <hr class="my-4">
+  </div>
+  <!--About me-->
+  <section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="section-title">About</p>
+            </div>
+        </div>
+    </div>
+    <div id="about-me-div" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8">
+                <p id="about-me-text">
+                  Hi, I'm Jack and I travel around the world
+
+                  I was born in Kansas, and like little Ellie, I always dreamed that a hurricane would take me somewhere to another country. And once I really ended up in another country - in China, studying at a business school. There I began to travel a lot around Asia in my free time and then moved to work in Munich.
+                  
+                  I discovered the world of low-cost airlines and began to fly somewhere and see the world every weekend. Being somewhere in the 15th country, I realized that I had enough experience and knowledge to share with others - and so this blog appeared. Here you will find useful tips, my travel experiences, life hacks and the usual daily thoughts about everything that surrounds me.
+                </p>
+                <h1>Projects</h1>
+            </div>
+        </div>
+    </div>
+    <!--skills-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-3 skills">
+              <a href="https://codepen.io/kadkins8815/pen/PoNRGMr/" target="_blank">
+              <img src="https://cdn3.iconfinder.com/data/icons/social-rounded-2/72/Codepen-256.png" alt="" style="">
+              <p>CSS Creature assignment</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-3 skills">
+              <a href="https://kadkins8815.github.io/StaticStoreFrontProject/" target="_blank">
+                <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-256.png" alt="" style="">
+                <p>Static Store Front Project</p>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-3 skills">
+              <a href="" target="_blank">
+                <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-256.png" alt="" style="">
+                <p>Business Challenges - Not yet completed</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!--Portfolio-->
+
+  <!--Contact form-->
+  <div class="container">
+    <p id="contact-title" class="section-title">Contact</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">First Name</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Last Name</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Email</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Subject</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Message</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="">
+      </div>
+      <button type="button" class="btn btn-dark">Submit</button>
+    </form>
+  <!--Footer-->
+  <section id="footer">
+    <p><strong>- Find me on -</strong></p>
+    <a href="https://github.com" target="blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+    <a href="www.linkedin.com/in/keithradkins" target="blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+    <a href="https://codepen.io/kadkins8815/pen/PoNRGMr/" target="blank" class="btn btn-default btn-lg"><i class="fa fa-CodePen fa-fw"></i> <span class="network-name">CodePen</span></a>
+    <br>
+    <br>
+    <hr>
+    Copyright © 2020 KRA
+  </section>
     
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
 </body>
 </html>
